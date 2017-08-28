@@ -271,3 +271,57 @@
         Pic(checked=true): $4
       TR: $5
     """
+  'sandwich':
+    'prefix': 'sandwich'
+    'body': """
+      = sandwich
+      \"\"\"
+      $1
+      \"\"\"
+
+      == pre-test
+
+      == activities
+
+      == post-test
+
+    """
+  'AnswerQuestions':
+    'prefix': 'answerquestions'
+    'body': """
+      [TYPE AnswerQuestions]
+      Text: $1 // question
+      Text: $2 // glossary
+    """
+  'ReadParagraph':
+    'prefix': 'readparagraph'
+    'body': """
+      [TYPE ReadParagraph]
+      Text: $1 //instruction
+      Audio(id=$2): $3 // question
+      Audio(id=$4): $5 // answer
+    """
+  'RepeatWords':
+    'prefix': 'repeatwords'
+    'body': """
+      [TYPE RepeatWords]
+      Pic(id=$1): $2
+      Audio(id=$3): $4
+    """
+  'WabaoWithSentence':
+    'prefix': 'waobaowithsentence'
+    'body': """
+      [TYPE WabaoWithSentence]
+      Audio(id=$1): $2
+      Text: $3
+      Opts:
+        Audio(id=$4): $5
+        ...
+    """
+  'Category':
+    'prefix': 'category'
+    'body': """
+      [TYPE Category]
+      Text: $1
+      Text: $2
+    """
