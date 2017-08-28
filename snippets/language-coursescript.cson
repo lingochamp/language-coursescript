@@ -274,16 +274,16 @@
   'sandwich':
     'prefix': 'sandwich'
     'body': """
-      = sandwich
+      = Sandwich
       \"\"\"
       $1
       \"\"\"
 
-      == pre-test
+      == Pre-test
 
-      == activities
+      == Activities
 
-      == post-test
+      == Post-test
 
     """
   'AnswerQuestions':
