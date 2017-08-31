@@ -286,8 +286,8 @@
       == Post-test
 
     """
-  'AnswerQuestions':
-    'prefix': 'answerquestions'
+  'AnswerQuestion':
+    'prefix': 'answerquestion'
     'body': """
       [TYPE AnswerQuestions]
       Text: $1 // question
@@ -322,6 +322,7 @@
     'prefix': 'category'
     'body': """
       [TYPE Category]
-      Text: $1
-      Text: $2
+      Text(cate=$1): $2 // text with catagory
+      Opts:
+        Audio(id=xxxxx): cheap
     """
