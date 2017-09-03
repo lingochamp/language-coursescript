@@ -276,7 +276,11 @@
     'body': """
       = Sandwich
       \"\"\"
-      $1
+      knowledge point:
+      dimension:
+      band:
+      level:
+        -
       \"\"\"
 
       == Pre-test
@@ -297,9 +301,10 @@
     'prefix': 'readparagraph'
     'body': """
       [TYPE ReadParagraph]
-      Text: $1 //instruction
+      Text: $1 // question
       Audio(id=$2): $3 // question
-      Audio(id=$4): $5 // answer
+      Text: $4 // answer
+      Audio(id=$5): $6 // answer
     """
   'RepeatWords':
     'prefix': 'repeatwords'
@@ -307,15 +312,18 @@
       [TYPE RepeatWords]
       Pic(id=$1): $2
       Audio(id=$3): $4
+      Text: $5
+      Text: $6
     """
-  'WabaoWithSentence':
-    'prefix': 'waobaowithsentence'
+  'TianKongWaBao':
+    'prefix': 'tiankongwabao'
     'body': """
-      [TYPE WabaoWithSentence]
+      [TYPE TianKongWaBao]
       Audio(id=$1): $2
       Text: $3
+      Text: $4
       Opts:
-        Audio(id=$4): $5
+        Audio(id=$5): $6
         ...
     """
   'Category':
