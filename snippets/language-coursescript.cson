@@ -323,15 +323,12 @@
       Audio(id=$1): $2
       Text: $3
       Text: $4
-      Opts:
-        Audio(id=$5): $6
-        ...
+      Audio(id=$5): $6
     """
   'Category':
     'prefix': 'category'
     'body': """
       [TYPE Category]
       Text(cate=$1): $2 // text with catagory
-      Opts:
-        Audio(id=xxxxx): cheap
+      Audio(id=xxxxx): cheap
     """
