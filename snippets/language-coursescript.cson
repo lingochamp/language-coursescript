@@ -271,3 +271,64 @@
         Pic(checked=true): $4
       TR: $5
     """
+  'sandwich':
+    'prefix': 'sandwich'
+    'body': """
+      = Sandwich
+      \"\"\"
+      knowledge point:
+      dimension:
+      band:
+      level:
+        -
+      \"\"\"
+
+      == Pre-test
+
+      == Activities
+
+      == Post-test
+
+    """
+  'AnswerQuestion':
+    'prefix': 'answerquestion'
+    'body': """
+      [TYPE AnswerQuestions]
+      Text: $1 // qid
+      Text: $2 // question
+      Text: $3 // glossary
+    """
+  'ReadParagraph':
+    'prefix': 'readparagraph'
+    'body': """
+      [TYPE ReadParagraph]
+      Text: $1 // question
+      Audio(id=$2): $3 // question
+      Text: $4 // answer
+      Audio(id=$5): $6 // answer
+    """
+  'RepeatWords':
+    'prefix': 'repeatwords'
+    'body': """
+      [TYPE RepeatWords]
+      Pic(id=$1): $2
+      Audio(id=$3): $4
+      Text: $5
+      Text: $6
+    """
+  'TianKongWaBao':
+    'prefix': 'tiankongwabao'
+    'body': """
+      [TYPE TianKongWaBao]
+      Audio(id=$1): $2
+      Text: $3
+      Text: $4
+      Audio(id=$5): $6
+    """
+  'Classification':
+    'prefix': 'classification'
+    'body': """
+      [TYPE Category]
+      Text(cate=$1): $2 // text with catagory
+      Audio(id=xxxxx): cheap
+    """
