@@ -294,8 +294,9 @@
     'prefix': 'answerquestion'
     'body': """
       [TYPE AnswerQuestions]
-      Text: $1 // question
-      Text: $2 // glossary
+      Text: $1 // qid
+      Text: $2 // question
+      Text: $3 // glossary
     """
   'ReadParagraph':
     'prefix': 'readparagraph'
