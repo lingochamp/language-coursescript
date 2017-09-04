@@ -325,8 +325,8 @@
       Text: $4
       Audio(id=$5): $6
     """
-  'Category':
-    'prefix': 'category'
+  'Classification':
+    'prefix': 'classification'
     'body': """
       [TYPE Category]
       Text(cate=$1): $2 // text with catagory
